@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+.remp {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.remp input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.remp input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.remp button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.remp button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+#liste {
+    margin-top: 20px;
+}
+
+#liste ul {
+    list-style: none;
+    padding: 0;
+}
+
+#liste li {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.2s, background 0.3s;
+}
+
+#liste li:hover {
+    background: #ecf0f1;
+    transform: translateY(-2px);
+}
+
+.taskText {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.statusMessage {
+    color: #2ecc71;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter input[type="date"],
+.filter input[type="text"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    flex: 1;
+    margin-right: 5px;
+    transition: border-color 0.3s;
+}
+
+.filter input[type="date"]:focus,
+.filter input[type="text"]:focus {
+    border-color: #3498db;
+}
+
+.filter button {
+    background-color: #e67e22;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter button:hover {
+    background-color: #d35400;
+}

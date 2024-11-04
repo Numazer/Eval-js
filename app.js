@@ -61,6 +61,12 @@ function createDeleteButton(tache) {
     return boutonSuppr;
 }
 
+// Fonction pour supprimer une tâche
+function supprTache(tache) {
+    listeTache.removeChild(tache);
+    console.log("Tâche supprimée"); // Pour vérifier que ça fonctionne
+}
+
 // Fonction pour créer un bouton de marquage comme terminé
 function createCompleteButton(tache) {
     let boutonTerminer = document.createElement("button");
@@ -119,7 +125,6 @@ function editTache(tache) {
     tache.appendChild(inputDesc);
     tache.appendChild(document.createElement("br"));
     tache.appendChild(inputDate);
-
 
 
     // Créer un bouton de sauvegarde
@@ -191,3 +196,4 @@ function filterTasks() {
     // Appel à la fonction de tri après le filtrage
     sortTasks();
 }
+
